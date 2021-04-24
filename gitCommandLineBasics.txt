@@ -1,0 +1,125 @@
+~~git~~ 4.24.2021
+
+TianchaodeMBP:~ tianjingzhuo$ git --version                              <= Checking git version 
+git version 2.24.3 (Apple Git-128)
+
+TianchaodeMBP:~ tianjingzhuo$ git config --global user.name "Jingzhuo Tian"
+TianchaodeMBP:~ tianjingzhuo$ git config --global user.name "tjz2834626872@gmail.com"       <= setting personal information
+
+TianchaodeMBP:~ tianjingzhuo$ git config --list             <= lists all the configs 
+credential.helper=osxkeychain
+user.name=Jingzhuo Tian
+user.email=tjz2834626872@gmail.com
+
+
+##NEED HELP???##   ==>     git help <verb>  
+                            git <verb>  help     => git help <config>  
+
+##########the directory before initialize git repository
+TianchaodeMBP:git tianjingzhuo$ ls -la
+total 8
+drwxr-xr-x   3 tianjingzhuo  staff    96 24 Apr 14:02 .
+drwx------@ 37 tianjingzhuo  staff  1184 24 Apr 14:00 ..
+-rw-r--r--   1 tianjingzhuo  staff   647 24 Apr 14:13 gitCommandLineBasics.txt
+
+
+TianchaodeMBP:git tianjingzhuo$ git init
+Initialized empty Git repository in /Users/tianjingzhuo/Desktop/Git/.git/      <=initializing an empty git repository
+
+##########the directory after initialize git repository
+TianchaodeMBP:git tianjingzhuo$ ls -la
+total 8
+drwxr-xr-x   4 tianjingzhuo  staff   128 24 Apr 14:15 .
+drwx------@ 37 tianjingzhuo  staff  1184 24 Apr 14:00 ..
+drwxr-xr-x   9 tianjingzhuo  staff   288 24 Apr 14:15 .git                          <=====the local repository is initialized
+-rw-r--r--   1 tianjingzhuo  staff   647 24 Apr 14:13 gitCommandLineBasics.txt
+
+!!!!!!!!!!!!!!!!!!!!!ready for work?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+TianchaodeMBP:git tianjingzhuo$ git status                                         !
+On branch master                                                                   !
+                                                                                    !
+No commits yet                                                                      !
+                                                                                    !
+Untracked files:                                                                    !
+  (use "git add <file>..." to include in what will be committed)                    !
+	gitCommandLineBasics.txt                                                        !
+                                                                                    !
+nothing added to commit but untracked files present (use "git add" to track)        !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+TianchaodeMBP:git tianjingzhuo$ touch .gitignore           <========create git ignore file(the files included will be ignored by git)
+TianchaodeMBP:git tianjingzhuo$ ls -la
+total 8
+drwxr-xr-x   5 tianjingzhuo  staff   160 24 Apr 14:26 .
+drwx------@ 37 tianjingzhuo  staff  1184 24 Apr 14:00 ..
+drwxr-xr-x   9 tianjingzhuo  staff   288 24 Apr 14:22 .git                                       
+-rw-r--r--   1 tianjingzhuo  staff     0 24 Apr 14:26 .gitignore                <==================
+-rw-r--r--   1 tianjingzhuo  staff   647 24 Apr 14:13 gitCommandLineBasics.txt
+
+
+TianchaodeMBP:git tianjingzhuo$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+	gitCommandLineBasics.txt
+	hi.py                                                               <===========before we hidden this file into gitignore file
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+TianchaodeMBP:git tianjingzhuo$ vim .gitignore 
+
+hi.py           <============= we are editing the gitignore file
+~                                                                                                                                                                                                           
+~          
+
+
+
+TianchaodeMBP:git tianjingzhuo$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore                                                                 <===========After we hidden this file into gitignore file
+	gitCommandLineBasics.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+
+TianchaodeMBP:git tianjingzhuo$ git add -A    <=========add ALL the file in this working directory into staging area
+TianchaodeMBP:git tianjingzhuo$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+	new file:   gitCommandLineBasics.txt
+
+
+
+
+TianchaodeMBP:git tianjingzhuo$ git reset gitCommandLineBasics.txt     <============git reset <file name> put this file back to the previous stage
+TianchaodeMBP:git tianjingzhuo$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	gitCommandLineBasics.txt
+
+
