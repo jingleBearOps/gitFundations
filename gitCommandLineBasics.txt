@@ -155,10 +155,48 @@ Date:   Sat Apr 24 15:01:04 2021 -0700                            <<==========Th
 :::::::::::::::::::::::::CLONE A REPOSITORY::::::::::::::::::::::::
 git clone <url> <where to clone>
 
-
+TianchaodeMBP:git tianjingzhuo$ git add -A
 TianchaodeMBP:git tianjingzhuo$ git commit -m"Modified file" <<<========Ready for commit and final PUSH
 [master 7415554] Modified file
  1 file changed, 31 insertions(+)
 
 
 TianchaodeMBP:git tianjingzhuo$ git diff   <<====Checking the difference of editing 
+
+
+
+
+
+
+TianchaodeMBP:git tianjingzhuo$ git log                                         <<=========Checking for the commited status
+commit 5111bd9f9e35867daa875ad3fc6c002ea362bc1a (HEAD -> master)
+Author: Jingzhuo Tian <tjz2834626872@gmail.com>
+Date:   Sat Apr 24 15:15:00 2021 -0700
+
+    Modified files
+
+commit 741555408c22216dd05d774a75c7790ce0ed9c34
+Author: Jingzhuo Tian <tjz2834626872@gmail.com>
+Date:   Sat Apr 24 15:11:02 2021 -0700
+
+    Modified file
+
+commit 32402264625d9f1bb66d074eb29a9c941cfd94eb
+Author: Jingzhuo Tian <tjz2834626872@gmail.com>
+Date:   Sat Apr 24 15:01:04 2021 -0700
+
+    This is the first personal commit
+TianchaodeMBP:git tianjingzhuo$  git push https://github.com/jingleBearOps/gitFundations.git  master    <<=========final step (push)!!!
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 2.19 KiB | 2.19 MiB/s, done.
+Total 10 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/jingleBearOps/gitFundations/pull/new/master
+remote: 
+To https://github.com/jingleBearOps/gitFundations.git
+ * [new branch]      master -> master
