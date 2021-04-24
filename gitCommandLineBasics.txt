@@ -123,3 +123,34 @@ Untracked files:
 	gitCommandLineBasics.txt
 
 
+
+
+!!!!!!!!!!!!!!IMPORTANT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!COMMIT!!!!
+TianchaodeMBP:git tianjingzhuo$ git commit -m "This is the first personal commit"    <=======git commit with comments
+[master (root-commit) 3240226] This is the first personal commit
+ 2 files changed, 127 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 gitCommandLineBasics.txt
+
+ !!!!!!!!!!!!!Successfully commited !!!!!!!!!!!!!!!'
+
+ TianchaodeMBP:git tianjingzhuo$ git status
+On branch master
+nothing to commit, working tree clean         <<========NO Other files are modified 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+!!!!!!!!!!!!!!!!!!Checking the history!!!!!!!!!!!!!!!!!!!!!!!
+TianchaodeMBP:git tianjingzhuo$ git log
+commit 32402264625d9f1bb66d074eb29a9c941cfd94eb (HEAD -> master)
+Author: Jingzhuo Tian <tjz2834626872@gmail.com>                   <<==========The author who made the commit
+Date:   Sat Apr 24 15:01:04 2021 -0700                            <<==========The date when this commit is made
+
+    This is the first personal commit
+
+
+
+
+:::::::::::::::::::::::::CLONE A REPOSITORY::::::::::::::::::::::::
+git clone <url> <where to clone>
