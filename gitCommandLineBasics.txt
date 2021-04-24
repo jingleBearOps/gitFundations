@@ -154,3 +154,11 @@ Date:   Sat Apr 24 15:01:04 2021 -0700                            <<==========Th
 
 :::::::::::::::::::::::::CLONE A REPOSITORY::::::::::::::::::::::::
 git clone <url> <where to clone>
+
+
+TianchaodeMBP:git tianjingzhuo$ git commit -m"Modified file" <<<========Ready for commit and final PUSH
+[master 7415554] Modified file
+ 1 file changed, 31 insertions(+)
+
+
+TianchaodeMBP:git tianjingzhuo$ git diff   <<====Checking the difference of editing 
