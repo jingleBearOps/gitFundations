@@ -200,3 +200,16 @@ remote:      https://github.com/jingleBearOps/gitFundations/pull/new/master
 remote: 
 To https://github.com/jingleBearOps/gitFundations.git
  * [new branch]      master -> master
+
+
+
+ !!!!!!!!!!CLONE FORM SPECIFIC BRANCHHHHHHHH!!!!!!!!!!!!!
+ git clone -b <branch>  <remote_repo>
+ EX:
+TianchaodeMBP:git tianjingzhuo$ git clone -b master https://github.com/jingleBearOps/gitFundations.git/  <<=====CLONE SPECIFIC BRANCH
+Cloning into 'gitFundations'...
+remote: Enumerating objects: 16, done.
+remote: Counting objects: 100% (16/16), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 16 (delta 6), reused 13 (delta 6), pack-reused 0
+Unpacking objects: 100% (16/16), done.
